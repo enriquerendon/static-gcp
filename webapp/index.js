@@ -1,16 +1,12 @@
 sap.ui.define([
-  "sap/m/Text"
-
-], function (Text) {
-<<<<<<< HEAD
-  "use strict";
-  new Text({
-    text: "Hello World"
-  }).placeAt("content");
-=======
+	"sap/ui/core/mvc/XMLView"
+], function (XMLView) {
 	"use strict";
-  new Text({
-		text: "Hello World"
-	}).placeAt("content");
->>>>>>> 5420ef37bbf028d98bde0398bb3c86d36220f658
+
+	XMLView.create({
+		viewName: "sap.ui.demo.walkthrough.view.App"
+	}).then(function (oView) {
+		oView.placeAt("content");
+	});
+
 });
